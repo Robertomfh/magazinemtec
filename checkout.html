@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+
+  <body class="bg-slate-300 flex flex-col h-screen">
+  <header class="flex bg-slate-900 h-15 px-2 py-2 justify-between sticky top-0 shadow-lg shadow-slate-500 z-10">
+    <a href="./">
+      <img class="h-14" src="./assets/logo/hashtag.svg" alt="Logo da Mtec"/>
+    </a>
+  
+  </header>
+  <form class="flex w-100 px-5 gap-4 py-10 grow">
+    <section class= "w-1/3 bg-white rounded-lg" id="dados-usuarios">
+      <p class="mb-5 text-center font-bold">Seus Dados</p>
+      <div class="flex flex-col px-10 py-5">
+        <label for="nome" class="font-bold text-sm mb-2">Nome</label>
+        <input type="text" id="nome" class="rounded-sm border-2 border-slate-200 py-1" placeholder="Escreva seu nome" required>
+      </div>
+      <div class="flex flex-col px-10 py-5">
+        <label for="nome" class="font-bold text-sm mb-2">Email</label>
+        <input type="email" id="nome" class="rounded-sm border-2 border-slate-200 py-1" placeholder="Escreva seu email" required>
+      </div>
+      <div class="flex flex-col px-10 py-5">
+        <label for="nome" class="font-bold text-sm mb-2">Telefone</label>
+        <input type="tel" id="nome" class="rounded-sm border-2 border-slate-200 py-1" placeholder="Escreva seu Telefone: (00) 00000-000" required>
+      </div>
+    </section>
+    <section class= "w-1/3 bg-white rounded-lg" id="pagamento-entrega">
+      <p class="mb-5 text-center font-bold">Pagamento e Entrega</p>
+      <div class="flex flex-col px-10 py-5">
+        <label for="nome" class="font-bold text-sm mb-2">N° do Cartão</label>
+        <input type="text" id="nome" class="rounded-sm border-2 border-slate-200 py-1" placeholder="Coloque o N° do seu Cartão" required>
+      </div>
+      <div class="flex ">
+        <div class="flex flex-col px-10 py-5 w-1/2">
+          <label for="nome" class="font-bold text-sm mb-2">CVV</label>
+          <input type="text" id="nome" class="rounded-sm border-2 border-slate-200 py-1" placeholder="Código de segurança do Cartão" required>
+        </div>
+        <div class="flex flex-col px-10 py-5 w-1/2">
+          <label for="nome" class="font-bold text-sm mb-2">Data de Validade</label>
+          <input type="text" id="nome" class="rounded-sm border-2 border-slate-200 py-1" placeholder="Coloque a Data de validade do Cartão" required>
+        </div>
+
+      </div>
+    </section>
+    <section class= "w-1/3 bg-white rounded-lg" id="produtos-checkout">
+      <section id="container-produtos-checkout" class="h-3/4 overflow-y-auto p-3"></section>
+
+      <section id="celula-checkout" class="flex flex-col px-2 h-1/5 justify-around">
+        <p class="bg-slate-200 text-green-900" id="preco-total-chekout"></p>
+        <button class="bg-slate-200 text-slate-900 p-1" type="submit">Finalizar compra</button>
+      </section>
+    </section>
+
+    
+    </section>
+  </form>
+    <script src="./checkout.js" type="module"></script>
+  </body>
+</html>
